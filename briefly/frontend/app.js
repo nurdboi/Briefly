@@ -1,4 +1,4 @@
-const API = 'http://localhost:3000'; // change to your deployed backend in production
+const API = 'https://briefly-4m9b.onrender.com'; // change to your deployed backend in production
 let token = localStorage.getItem('briefly_token') || null;
 const el = id => document.getElementById(id);
 
@@ -108,3 +108,4 @@ el('buy20').onclick = () => createSession('/create-checkout-session-credits', { 
 el('buy50').onclick = () => createSession('/create-checkout-session-credits', { pack:'50' });
 
 restore();
+
